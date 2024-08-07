@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+
+        <title> Multi-Step Registration Form. </title>
+    </head>
+
+    <body>
+        <div class="container" id="register-container">
+            <form action="">
+                <h1> Register: </h1>
+
+                <div class="form-input">
+                    <input type="email" placeholder="Enter your email." required>
+                    <i class="ri-mail-unread-fill"></i>
+                </div>
+
+                <div class="form-input">
+                    <input type="password" placeholder="Enter your password." required>
+                    <i class="ri-git-repository-private-fill"></i>
+                </div>
+
+                <div class="form-input">
+                    <input type="password" placeholder="Confirm Password." required>
+                    <i class="ri-git-repository-private-line"></i>
+                </div>
+
+                <div class="form-buttons">
+                    <button type="button" class="button form-button" id="next-to-login"> Next </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="container" id="login-container" style="display: none;">
+            <form action="">
+                <h1> Step - 2: </h1>
+
+                <div class="form-input">
+                    <input type="text" placeholder="Enter your username." required>
+                    <i class="ri-user-3-fill"></i>
+                </div>
+
+                <div class="form-input">
+                    <input type="text" placeholder="Enter your first name." required>
+                    <i class="ri-user-6-fill"></i>
+                </div>
+
+                <div class="form-input">
+                    <input type="text" placeholder="Confirm last name." required>
+                    <i class="ri-user-6-fill"></i>
+                </div>
+
+                <div class="form-buttons">
+                    <button type="button" class="button precious" id="previous-to-login"> Previous </button>
+                    <button type="button" class="button" id="next-to-final"> Next </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="container" id="final-container" style="display: none;">
+            <form action="">
+                <h1> Final Step: </h1>
+
+                <div class="form-input">
+                    <input type="number" placeholder="Enter your phone number." required>
+                    <i class="ri-phone-fill"></i>
+                </div>
+
+                <div class="form-input">
+                    <input type="date" placeholder="Enter your Date of Birth." required>
+                    <i class="ri-calendar-2-fill"></i>
+                </div>
+
+                <div class="form-buttons">
+                    <button type="button" class="button precious" id="previous-to-login-final"> Previous </button>
+                    <button type="button" class="button"> Done. </button>
+                </div>
+            </form>
+        </div>
+
+        <script src="script.js"></script>        
+    </body>
+</html>
